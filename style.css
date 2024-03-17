@@ -1,0 +1,67 @@
+.liste-documents-provisoires {
+  text-align: left;
+}
+
+.liste-documents-provisoires .documents-provisoires .article-id::before {
+  color: red;
+  font-weight: bold;
+  content: "Numéro : ";
+}
+
+.liste-documents-provisoires .documents-provisoires .document::before {
+  content: "Document : ";
+  font-weight: bold;
+  color: red;
+}
+
+
+.liste-documents-provisoires .documents-provisoires .document .rl_tooltips-link.nn_tooltips-link.hover.top .ref-interne-seo {
+  color: blue;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.liste-documents-provisoires .documents-provisoires {
+  border: 2px solid black;
+  margin: 1%;
+  padding: 1%;
+}
+
+.liste-documents-provisoires .titre {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 220%;
+  border: 2px solid rebeccapurple;
+  padding: 1%;
+  background-color: rebeccapurple;
+  border-radius: 10px;
+}
+
+.liste-documents-provisoires ul li .nom-document-provisoire {
+  font-weight: bold;
+}
+
+.liste-documents-provisoires ul li .ref-document-provisoire {
+  color: red;
+}
+
+.liste-documents-provisoires ul li .id-article-document-provisoire {
+  color: blue;
+  font-weight: bold;
+}
+
+.liste-documents-provisoires ul li .date-declaration-document-provisoire {
+  color: green;
+  font-weight: bold;
+}
+
+.liste-documents-provisoires ul li .ref-document-provisoire::before{
+	content:"(";
+}
+
+.liste-documents-provisoires ul li .ref-document-provisoire::after{
+	content:")";
+}
+

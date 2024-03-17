@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.0" type="plugin" group="Content">
+	<name>Fichiers provisoires</name>
+	<author>Sebastien LHUILLIER</author>
+	<creationDate>Mars 2024</creationDate>
+	<copyright>Sébastien LHUILLIER</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>sebastien.lhuillier+joomla@gmail.com</authorEmail>
+	<authorUrl>www.sebastien-lhuillier.com</authorUrl>
+	<version>1.0</version>
+	<description>Ce plugin affiche toutes les documentations taggées comme provisoires</description>
+	<files>
+		<filename plugin="provisoire">provisoire.php</filename>
+		<filename>provisoire.xml</filename>			
+	</files>	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="titreDocProv" type="textarea" default="default" label="Titre" description="" rows="10" cols="5" />
+				<field name="note-utilisation" type="note" class="alert" label="Tag à utiliser" description="Pour afficher la liste des documents provisoires, utiliser {fichiersprovisoires}" />
+				<field name="note-modeemploi" type="note" class="alert alert-info" label="data-provisoire à utiliser" description="Sur chacun des liens  que vous souhaitez voir apparaitre dans le liste des documents a classer comme provisoire, utiliser la propriete data-provisoire=&quot;2024-10-12&quot; où le paramère spécisie la date A LAQUELLE le fichier a été déclaré comme provisoire. Pour afficher la liste des document provisoire dans un article, utiliser {fichiersprovisoires}" />
+				
+			</fieldset>	
+		</fields>
+	</config>	
+</extension>
